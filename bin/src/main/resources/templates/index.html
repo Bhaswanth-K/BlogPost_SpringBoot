@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog Home</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f2f2f2; text-align: center; }
+        .container { background: white; padding: 40px; border-radius: 10px; max-width: 600px; margin: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        p { color: #666; }
+        .links a, .links form { display: inline-block; margin: 10px; }
+        .links a { text-decoration: none; background: #007bff; color: white; padding: 12px 20px; border-radius: 5px; font-weight: bold; }
+        .links a:hover { background: #0056b3; }
+        .links form { display: inline; }
+        .links button { background: #dc3545; color: white; padding: 12px 20px; border-radius: 5px; font-weight: bold; border: none; cursor: pointer; }
+        .links button:hover { background: #c82333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Blog Application!</h1>
+        <p>You have successfully logged in.</p>
+        <div class="links">
+            <a href="/blogs">View All Blogs</a>
+            <form action="/logout" method="post">
+                <button type="submit">Logout</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

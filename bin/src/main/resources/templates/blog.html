@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${blog.title}"></title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f2f2f2; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h2 { color: #333; margin-bottom: 10px; }
+        pre { white-space: pre-wrap; word-wrap: break-word; font-family: sans-serif; line-height: 1.6; color: #555; }
+        a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 th:text="${blog.title}">Blog Title</h2>
+        <pre th:text="${blog.content}"></pre>
+        <a href="/blogs">← Back to Blogs</a>
+    </div>
+</body>
+</html>
